@@ -1,0 +1,99 @@
+/* Reset básico para garantir que fique igual em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0f0c29; /*Fundo escuro*/
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /*Degradê escuro*/
+    color: #fafafa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    background-color: #1e1e2f;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #4834d4;
+    text-align: center;
+}
+
+/* Visor da Senha */
+#senha {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #2d2d44;
+    border: 2px solid #686de0;
+    border-radius: 8px;
+    color: #a29bfe;
+    font-size: 1.2rem;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    outline: none;
+}
+
+/* Inputs de número e texto */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo dos Checkboxes */
+form {
+    text-align: left;
+    margin-bottom: 25px;
+    background: #252539;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+form p {
+    margin-bottom: 10px;
+    color: #a29bfe;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Botão Gerar */
+#gerar {
+    width: 100%;
+    padding: 12px;
+    background-color: #686de0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#gerar:hover {
+    background-color: #4834d4;
+    transform: translateY(-2px);
+}
+
+#gerar:active {
+    transform: translateY(0);
+}

@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador-de-Senhas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+    <h2>Gerador de Senhas</h2>
+    <!--visor da senha-->
+    <input type="text" id="senha" readonly placeholder="Sua senha aparecerá aqui!">
+
+    <!--input de comprimento que deseja que a senha seja-->
+    <input type="number" id="comprimento" min="4" max="20" placeholder="Digite um número de 4 a 20">
+
+    <!--personalização da senha-->
+    <form>
+        <p>Personalização:</p>
+
+        <input type="checkbox" id="minusc">
+        <label for="minusc">Letras minúsculas</label><br>
+
+        <input type="checkbox" id="maisc">
+        <label for="maisc">Letras maiúsculas</label><br>
+
+        <input type="checkbox" id="num">
+        <label for="num">Números</label><br>
+
+        <input type="checkbox" id="esp">
+        <label for="esp">Caracteres especiais</label>
+    </form>
+
+    <!--botão de gerar-->
+    <button id="gerar">Gerar</button>
+
+
+    </div> <script src="script.js"></script>
 </body>
+
 </html>
